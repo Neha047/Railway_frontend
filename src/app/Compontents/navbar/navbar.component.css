@@ -1,0 +1,41 @@
+.menu-title{
+    color: white;
+}
+.menu-title a{
+    color: white;
+   
+}
+.appname{
+    font-size: 26px;
+  top: 20px;
+  
+}
+.navbar-brand{
+    color: white;
+    
+}
+nav{
+    margin-top: -8px;
+  
+}
+nav div{
+    background: rgb(172, 15, 15);
+    height: 60px;
+}
+.div-menu{
+    margin-right: 80px;
+}
+.div-menu ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 50px;
+}
+.d-flex{
+    margin-left: 30px;
+}
+.d-flex button{
+    background-color: wheat;
+    border: 0;
+   color: brown;
+}

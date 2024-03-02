@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+
+  <div class="card continer">
+    <h2>Welcome To Our Railway Booking App</h2>
+    <div class="row" style="margin-left: 50px;margin-right: 50px;margin-bottom: -20px;">
+       
+        
+        <div class="col sm-4">
+         <h3>select origin station</h3>
+        </div>
+        
+         <div class="col sm-4">
+         <h3>select origin station</h3>
+        </div>
+        
+         </div>
+    <form (ngSubmit)="submitForm()">
+     
+
+      <select class="select_ls" style="margin-right: 10px;" [(ngModel)]="originStation" name="originStation">
+        <option value="" disabled selected>Select origin station</option>
+        <option *ngFor="let st of stations" [value]="st.station">{{ st.station }}</option>
+      </select>
+      
+      <select class="select_ls" style="margin-left: 10px;" [(ngModel)]="destinationStation" name="destinationStation">
+        <option value="" disabled selected>Select destination station</option>
+        <option *ngFor="let st of stations" [value]="st.station">{{ st.station }}</option>
+      </select>
+      
+      
+  
+      <br>
+      <button class="bt-button" type="submit">Submit</button>
+    </form> 
+
+    <div *ngIf="priceDifference !== undefined" class="price">
+        Price Difference: {{ priceDifference }}
+      </div>
+
+
+      <div *ngIf="ticketDetails">
+        <h2>Ticket Details</h2>
+        <p><strong>Origin Station:</strong> {{ ticketDetails.originStation }}</p>
+        <p><strong>Destination Station:</strong> {{ ticketDetails.destinationStation }}</p>
+        <p><strong>Price:</strong> {{ ticketDetails.price }}</p>
+        <!-- Add more ticket details as needed -->
+      </div>
+      
+
+      <!-- <div *ngIf="ticketDetails">
+        <h3>Ticket Details:</h3>
+        <p>{{ ticketDetails }}</p>
+      </div> -->
+      
+  </div>
+  
+  

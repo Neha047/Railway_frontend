@@ -1,0 +1,40 @@
+.continer{
+    text-align: center;
+    margin-top: 80px;
+}
+.continer h2{
+    color: brown;
+    font-size: 35px;
+ 
+}
+.row{
+    margin-top: 50px;
+}
+.card{
+    border: 2px solid;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 40px 20px 40px 20px;
+}
+
+.select_ls{
+    width:300px;
+    font-size: 24px;
+}
+.bt-button{
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    font-size: 22px;
+    color: azure;
+    background-color: rgb(42, 165, 126);
+    margin-top: 50px;
+}
+
+.price{
+    font-size: 24px;
+    margin-top: 20px;
+    color: blue;
+    text-align: right;
+}
+
